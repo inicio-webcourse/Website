@@ -1,0 +1,65 @@
+/**@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');**/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+body {
+    background-color: black;
+}
+h1, h2, h3, p, li {
+    color: #FCFAF1;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+p{
+   
+}
+.nav{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    background-color: #4A4BC7;
+    color: #EBE9E4;
+}
+
+.nav a.active {
+    background-color: #4A4BC7;
+    color: #EBE9E4;
+}
+.quote {
+    text-align: center;
+    font-size: 50px;
+    padding: 150px;
+}
+
+.home {
+    background-image: url(im€ages/girl_sunset.jpg);
+    background-color: #4A4BC7;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    
+}
+
+.projects {
+    
+}
+
+.skills {
+    
+}
