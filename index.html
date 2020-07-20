@@ -4,58 +4,100 @@
         
         <title>Mikaela Illanes</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
         
     </head>
-    <body>
-    
-        <section class="nav" id="nav">
-            <!--Menu with some effects-->
-            <div id="topnav" class="nav">
-                <nav>
-                    <a href="#home" class="active">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                </nav>
-            </div>
-        </section>
+    <body id="top">
+
+        <!--Menu with some effects-->
+        <header>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <section id="home" class="home">
-            <div>
+        <section id="home" class="home hero">
+            <div class="hero-inner">
                 <!--Image that fills the top with text above-->
                 <h1 class="quote">Getting started is more important than being right!</h1>
-                <h2 class="quote">Good enough is really good</h2>
+                <h2>Let's learn how to create a website!</h2>
+                <a href="#about" class="btn"> More info</a>
             </div>    
         </section>
         
         <section id="about" class="about">
             <!--How to work with text in different ways-->
-            <h1>Welcome to my page!</h1>
-            <p>My name is Mikaela Illanes and I'm a serial entrepreneur, <br>business developer and UX and UI designer depending on what day it is.</p>
-            <p>But during these two weeks I will be founder of Inicio, web development coach and mentor.</p>
+            <h1>Welcome to Design your own website course!</h1>
+            <p>In this course we will learn the basics of web development.<br>
+            We will start of the course with creating our base and all of the content through HTML, then we will continue with styling this content through CSS. </p>
+            <ol>
+                This will be the set up of each class:
+                <li>Check in, to get a feel of today's mood</li>
+                <li>Short quiz of previous days material</li>
+                <li>Go through any questions</li>
+                <li>Presentation</li>
+                <li>Work in smaller groups</li>
+            </ol>
+            <div class="section">
+                <h2>Inicio</h2>
+                <p>Inicio offers hands on technical workshops for teenagers. Our goal is to equip the next generation with the 21st century skills that are necessary for them to succeed in their studies and careers. We partner with companies, schools and universities and connect our workshop participants with role models.</p>
+                <div class="flex-container">
+                    <div class="column-2">
+                        <h3>Mikaela</h3>
+                        <p>Works at</p>
+                    </div>
+                    <div class="column-2">
+                        <h3>Yiwen</h3>
+                        <p>KTH student</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Mentors</h2>
+                <div class="flex-container">
+
+                    <div class="column">
+                        <h3>Ikram</h3>
+                        <p>Works at</p>
+                    </div>
+                    <div class="column">
+                        <h3>Basel</h3>
+                        <p>KTH student</p>
+                    </div>
+                    <div class="column">
+                        <h3>Karishma</h3>
+                        <p>Works at</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
         
         <section id="projects" class="projects">
             <!--Under projects try to work out image grid and add a video-->
             <h1>My projects</h1>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YinWj5TpeVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!--  <iframe width="750" height="500" src="images/Session%202%20copy.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 
         </section>
         
         <section id="skills" class="skills">
             <!--Use Lists to define your skills-->
             <h1>These are some of my skills</h1>
-            <ul>
-                <p>Languages</p>
+            <p>Languages</p>
+            <ul class="center">
                 <li>Swedish</li>
                 <li>Spanish</li>
                 <li>English</li>
             </ul>
         </section>
         
-        <section>
-            <footer>
+        <footer>
                 <!--Social media tags and contact info-->
                 <a href="#top"> Back to top </a>
             <div class="social">
@@ -71,7 +113,6 @@
         </div>
                 <p>© Designed by Mikaela Illanes</p>
             </footer>
-        </section>
         
     
     </body>

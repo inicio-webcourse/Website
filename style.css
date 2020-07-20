@@ -3,29 +3,65 @@
 
 
 body {
+    margin: 0;
     background-color: black;
+    background-attachment: fixed;
+    
 }
 h1, h2, h3, p, li {
     color: #FCFAF1;
     font-family: 'Noto Sans', sans-serif;
+    text-align: center;
     
 }
 p{
+    color: #FCFAF1;
    
 }
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+
+}
+/*header * means any element inside of the header block*/
+header *{
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a{
+    color: #FCFAF1;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+/*
 .nav{
+    
     overflow: hidden;
     background-color: black;
     position: fixed;
+    
 }
 
 .nav a {
     display: inline-block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .nav a:hover {
@@ -36,30 +72,109 @@ p{
 .nav a.active {
     background-color: #4A4BC7;
     color: #EBE9E4;
+}*/
+.section {
+    padding: 50px;
 }
-.quote {
+.center{
     text-align: center;
-    font-size: 50px;
-    padding: 150px;
+}
+.flex-container {
+    display: flex;
+    height: 100px;
+    flex-grow: 1;
+    align-items: center;
 }
 
-.home {
-    background-image: url(im€ages/girl_sunset.jpg);
-    background-color: #4A4BC7;
-    height: 1000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.column{
+    float: left;
+    width: 33.33%;
 }
+.column-2{
+    float: left;
+    width: 50%;
+}
+.hero{
+    
+    /*sizing using viewport so that the image adapts to the browsers size*/
+    width: 100vw;
+    height: 100vh;
+    
+    /*flex-box stuff*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*text style*/
+    text-align: center;
+    color: #FCFAF1;
+    
+        /* Background styles*/
+    background-image:url(images/collection%20copy.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1{
+    font-size: 5em;
+    
+    /* let's fix the space between heading 1 and 2*/
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    
+    text-shadow: 0 5px 0 black;
+}
+
+.hero .btn{
+    display: block;
+    width: 200px;
+    
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #FCFAF1;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    border: 3px solid #00ae91;
+    border-radius: 20px;
+    
+    background-color: rgba(0, 174, 145, 0.8);
+    box-shadow: 0 0 5px 0 black;
+}
+
+.quote {
+    font-size: 100px;
+    color: #FCFAF1;
+    background: inherit;
+    }
+    
+/*.home {
+    background-image: url(images/collection%20copy.png);
+    background-color: #4A4BC7;
+    background-size: cover;
+    
+}*/
+
 
 .about {
-    background-color: aqua;
+    
+    padding: 50px
+    
 }
 
 .projects {
-    
+    padding: 50px;
 }
 
 .skills {
-    
+    padding: 50px
+}
+
+footer {
+    padding: 50px
 }
